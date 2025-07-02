@@ -3,7 +3,6 @@
 import * as React from "react"
 import { Menu, X } from "lucide-react"
 import { ModeToggle } from "./modeToggle"
-import Link from "next/link"
 
 export const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -17,10 +16,10 @@ export const Navbar: React.FC = () => {
                 <div className="text-2xl font-thin">Dr. Serena Blake</div>
 
                 <ul className="hidden md:flex gap-6 font-medium">
-                    <li><Link href="/about" className="hover:underline">About</Link></li>
-                    <li><Link href="/services" className="hover:underline">Services</Link></li>
-                    <li><Link href="/faq" className="hover:underline">FAQ</Link></li>
-                    <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+                    <li><a href="#about" className="hover:opacity-80">About</a></li>
+                    <li><a href="#services" className="hover:opacity-80">Services</a></li>
+                    <li><a href="#faq" className="hover:opacity-80">FAQ</a></li>
+                    <li><a href="#contact" className="hover:opacity-80">Contact</a></li>
                 </ul>
 
                 <div className="flex items-center gap-4">
@@ -45,10 +44,12 @@ export const Navbar: React.FC = () => {
                     }`}
             >
                 <div className="flex flex-col gap-4 text-base font-medium">
-                    <Link href="/about" className="hover:underline" onClick={toggleMenu}>About</Link>
-                    <Link href="/services" className="hover:underline" onClick={toggleMenu}>Services</Link>
-                    <Link href="/faq" className="hover:underline" onClick={toggleMenu}>FAQ</Link>
-                    <Link href="/contact" className="hover:underline" onClick={toggleMenu}>Contact</Link>
+                    <ul>
+                        <li><a href="#about" className="hover:opacity-80" onClick={toggleMenu}>About</a></li>
+                        <li><a href="#services" className="hover:opacity-80" onClick={toggleMenu}>Services</a></li>
+                        <li><a href="#faq" className="hover:opacity-80" onClick={toggleMenu}>FAQ</a></li>
+                        <li><a href="#contact" className="hover:opacity-80" onClick={toggleMenu}>Contact</a></li>
+                    </ul>
 
                     {/* Theme Toggle (mobile) */}
                     <div className="pt-2 border-t border-white/30">
