@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
     const toggleMenu = () => setIsMenuOpen((prev) => !prev)
 
     return (
-        <nav className="bg-yellow-100 dark:bg-blue-950 text-green-900 dark:text-white px-6 py-4">
+        <nav className="sticky top-0 z-50 bg-yellow-100 dark:bg-blue-950 text-green-900 dark:text-white px-6 py-4">
             <div className="flex items-center justify-between">
 
                 <div className="text-2xl font-thin">Dr. Serena Blake</div>
