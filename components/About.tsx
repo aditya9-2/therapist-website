@@ -23,7 +23,7 @@ export const About: React.FC = () => {
                     className='rounded-sm'
                 />
             </div>
-            <Bar color='bg-amber-600' />
+            <Bar color='bg-amber-800' />
         </div>
     )
 }

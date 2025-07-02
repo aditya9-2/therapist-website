@@ -17,7 +17,7 @@ export const SubAbout: React.FC = () => {
                 and space to work toward wellness and peace.
             </p>
 
-            <Bar color='bg-amber-600' />
+            <Bar color='bg-amber-800' />
         </div>
     );
 };
