@@ -10,10 +10,12 @@ export const Navbar: React.FC = () => {
     const toggleMenu = () => setIsMenuOpen((prev) => !prev)
 
     return (
-        <nav className="sticky top-0 z-50 bg-yellow-100 dark:bg-blue-950 text-green-900 dark:text-white px-6 py-4">
+        <nav className="sticky top-0 z-50 bg-yellow-100 dark:bg-blue-950 text-green-900 dark:text-white px-6 py-4 min-h-[75px] shadow-xl">
             <div className="flex items-center justify-between">
 
-                <div className="text-2xl font-thin">Dr. Serena Blake</div>
+                <div className="text-2xl font-thin hover:cursor-pointer">
+                    <a href="#">Dr. Serena Blake</a>
+                </div>
 
                 <ul className="hidden md:flex gap-6 font-medium">
                     <li><a href="#about" className="hover:opacity-80">About</a></li>
@@ -29,7 +31,7 @@ export const Navbar: React.FC = () => {
                     </div>
 
                     <button
-                        className="md:hidden transition-transform duration-300 ease-in-out"
+                        className="md:hidden transition-transform duration-300 ease-in-out hover:cursor-pointer"
                         onClick={toggleMenu}
                         aria-label="Toggle menu"
                     >
