@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What is the structure of Cognitive Behavioral Treatment for Insomnia (CBT-I)?",
+    "answer": "CBT-I typically includes sleep education, sleep restriction, stimulus control, cognitive restructuring, and relaxation training."
+  },
+  {
+    "question": "Do you treat children or adolescents?",
+    "answer": "No, currently services are only offered to adults aged 18 and over."
+  },
+  {
+    "question": "Which geographic regions do you serve?",
+    "answer": "We offer services to clients located within the state(s) we are licensed to practice, such as California and New York."
+  },
+  {
+    "question": "Do you offer in-person sessions?",
+    "answer": "Sessions are currently offered via secure virtual platforms only."
+  },
+  {
+    "question": "What technology do we use for virtual sessions?",
+    "answer": "We use HIPAA-compliant platforms such as Zoom for Healthcare or SimplePractice."
+  },
+  {
+    "question": "What are your hours?",
+    "answer": "We offer sessions Monday through Friday from 9am to 6pm."
+  },
+  {
+    "question": "Do you take insurance?",
+    "answer": "We are an out-of-network provider and can provide superbills for insurance reimbursement."
+  },
+  {
+    "question": "What is the cost of therapy?",
+    "answer": "Individual sessions typically range between $150 and $200 depending on duration and service type."
+  },
+  {
+    "question": "What are the benefits of private pay therapy?",
+    "answer": "Private pay therapy ensures greater privacy, flexibility, and allows more personalized care."
+  }
+]
