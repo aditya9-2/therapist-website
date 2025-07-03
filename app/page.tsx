@@ -1,4 +1,6 @@
 import { About } from "@/components/About";
+import { Contact } from "@/components/Contact";
+import { Faq } from "@/components/Faq";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { SubAbout } from "@/components/Sub-about";
@@ -12,7 +14,14 @@ export default function Home() {
       <About />
       <SubAbout />
       <Services items={serviceData} />
+      <Faq />
+      <Contact />
 
     </main>
   )
 }
+
+// Todo -
+// 1. add some animation while scroll
+// 2. add DB
+// 3. Deploy
