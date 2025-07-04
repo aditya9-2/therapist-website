@@ -9,11 +9,7 @@ export const About: React.FC = () => {
             <div className='min-h-screen mt-32 md:mt-40 mb-28 px-14 text-[#7e7e6b] dark:text-amber-50 flex flex-col md:flex-row md:justify-between items-center gap-5 md:gap-0'>
                 <div className='flex flex-col gap-6 max-w-[48rem] text-justify'>
                     <h1 className='text-4xl'>About Dr. Serena Blake</h1>
-                    <p>Finding time and opportunities to care for ourselves can be incredibly challenging in today&apos;s busy and demanding world. I believe therapy offers a dedicated space for self-care, providing the support and tools needed to improve this essential practice. Therapy can help individuals identify and clarify their goals, values, and the various elements that contribute to their well-being, recognizing that these aspects vary from person to person.</p>
-                    {/* <br /> */}
-                    <p>I am dedicated to supporting this journey by offering active listening, psychological knowledge, empathy, compassion, and insights into behavioral patterns and tendencies. I hold a master’s degree in Clinical Psychology from the Michigan School of Psychology (2012) and a Ph.D. in Counseling Psychology from Western Michigan University (2018). My experience spans therapy and psychological assessment in psychiatric inpatient units, academic medical centers, universities, and outpatient practice settings.</p>
-                    {/* <br /> */}
-                    <p>My therapeutic approach is primarily psychodynamic and humanistic, enriched by influences from positive psychology, existentialism, family systems theory, acceptance and commitment concepts, and mindfulness practices.</p>
+                    <p>Dr. Serena Blake is a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with eight years of experience and over 500 client sessions. She blends evidence-based approaches—like cognitive-behavioral therapy and mindfulness—with compassionate, personalized care to help you overcome anxiety, strengthen relationships, and heal from trauma. Whether you meet in her Maplewood Drive office or connect virtually via Zoom, Dr. Blake is committed to creating a safe, supportive space for you to thrive.</p>
                 </div>
                 <Image
                     alt='doctors image'
