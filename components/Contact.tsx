@@ -67,7 +67,7 @@ export const Contact: React.FC = () => {
 
                     <Button
                         type='submit'
-                        className='w-4/5 mx-auto bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-md py-2 transition'
+                        className='w-4/5 mx-auto bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-md py-2 transition hover:cursor-pointer'
                     >
                         Submit
                     </Button>
