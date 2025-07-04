@@ -1,6 +1,9 @@
+"use client"
+
 import * as React from 'react';
 import Link from 'next/link';
 import { Button } from './ui/button';
+import { motion } from 'framer-motion'
 
 export const Hero: React.FC = () => {
     return (
@@ -19,22 +22,39 @@ export const Hero: React.FC = () => {
 
             {/* Overlay Content */}
             <div className="relative z-10 flex flex-col justify-center items-center text-center h-full px-4 sm:px-6 bg-black/40">
-                <h2 className="text-white text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug drop-shadow-lg">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: 'easeOut' }}
+                    className="text-white text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug drop-shadow-lg"
+                >
                     Psychological Care for
                     <br />
                     <span className="font-bold">Change, Insight, and Well-Being</span>
-                </h2>
+                </motion.h2>
 
-                <p className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-md sm:max-w-xl drop-shadow-sm">
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                    className="mt-4 text-sm sm:text-base md:text-lg text-white max-w-md sm:max-w-xl drop-shadow-sm"
+                >
                     Offering individual psychotherapy for adults via telehealth in Michigan and most U.S. states through PSYPACT participation
-                </p>
+                </motion.p>
 
                 {/* CTA Button */}
-                <Link href="/book-appointment">
-                    <Button className="mt-6 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base text-white font-semibold rounded-full bg-[#93b7b1] hover:bg-[#7ba6a0] transition-all duration-300 cursor-pointer">
-                        SCHEDULE A CONSULTATION
-                    </Button>
-                </Link>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+                >
+                    <Link href="/book-appointment">
+
+                        <Button className="mt-6 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base text-white font-semibold rounded-full bg-[#93b7b1] hover:bg-[#7ba6a0] transition-all duration-300 cursor-pointer">
+                            SCHEDULE A CONSULTATION
+                        </Button>
+                    </Link>
+                </motion.div>
             </div>
         </div>
     );
