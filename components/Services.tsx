@@ -21,7 +21,7 @@ export const Services: React.FC<ServicesProps> = ({ items }) => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
                 {items.map((service, index) => (
                     <div key={index} className="flex flex-col items-center text-center gap-4 px-4">
-                        <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
+                        <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
                             <Image
                                 alt={service.heading}
                                 src={service.img}
